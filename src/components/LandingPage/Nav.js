@@ -2,14 +2,17 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 //Import Styled
 import styled from 'styled-components';
+//Framer Motion
+import {motion} from 'framer-motion';
+import {navAnim} from "../../animations";
 
 const Nav = () => {
 	return (
 		<StyledNav>
-			<ul>
+			<motion.ul variants={navAnim} initial="hidden" animate="show">
 				<li><Link to="/event" className="event">EVENT</Link></li>
 				<li><Link to="/corporate" className="corpo">CORPORATE</Link></li>
-			</ul>
+			</motion.ul>
 		</StyledNav>
 	)
 }

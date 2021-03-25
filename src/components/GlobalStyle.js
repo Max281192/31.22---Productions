@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body{
-	background-color: lightgray;
+	//background-color: lightgray;
   }
 
   a:link, a:visited {
